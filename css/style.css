@@ -249,7 +249,7 @@ header {
 .about-me__img {
     width: 150px; /* Match this value to the intro image size */
     height: auto; /* Maintain aspect ratio */
-    border-radius: 0%; /* Optional: to make the image round */
+    border-radius: 150%; /* Optional: to make the image round */
     display: block;
     margin: 0 auto; /* Center the image */
 }
