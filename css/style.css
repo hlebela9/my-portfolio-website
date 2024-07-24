@@ -12,9 +12,9 @@
     --fw-reg: 300;
     --fw-bold: 900;
 
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-light: #e0e0e0; /* Light gray for background */
+    --clr-dark: #1f1f1f; /* Dark gray for text and backgrounds */
+    --clr-accent: #16e0bd; /* Accent color for highlights */
 
     --fs-h1: 2.25rem;
     --fs-h2: 2.25rem;
@@ -37,8 +37,8 @@
 /* General styles */
 
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-dark); /* Dark background */
+    color: var(--clr-light); /* Light text color */
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -63,6 +63,7 @@ h2,
 h3 {
     line-height: 1.1;
     margin: 0;
+    color: var(--clr-light); /* Light color for headings */
 }    
 
 h1 { font-size: var(--fs-h1); }
@@ -71,6 +72,7 @@ h3 { font-size: var(--fs-h3); }
 
 .section__title {
     margin-bottom: 0.25em;
+    color: var(--clr-accent); /* Accent color for section titles */
 }
 
 .section__title--intro {
@@ -80,6 +82,7 @@ h3 { font-size: var(--fs-h3); }
 .section__subtitle {
     margin: 0;
     font-size: var(--fs-h3);
+    color: var(--clr-light); /* Light color for subtitles */
 }
 
 .section__subtitle--intro,
@@ -87,6 +90,7 @@ h3 { font-size: var(--fs-h3); }
     background: var(--clr-accent);
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+    color: var(--clr-dark); /* Dark color for text on accent background */
 }
 
 .section__subtitle--work {
@@ -101,6 +105,8 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    background: var(--clr-dark); /* Dark header background */
+    color: var(--clr-light); /* Light header text color */
 }
 
 .logo {
@@ -109,8 +115,8 @@ header {
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-dark); /* Dark navigation background */
+    color: var(--clr-light); /* Light navigation text color */
     top: 0;
     bottom: 0;
     left: 0;
@@ -251,12 +257,12 @@ header {
 /* My services section */
 
 .my-services {
-    background-color: var(--clr-dark);
+    background-color: var(--clr-dark); /* Dark background */
     background-image: url('../img/services-bg.jpg'); /* Ensure path is correct */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: var(--clr-light);
+    color: var(--clr-light); /* Light text color */
     padding: 2rem;
     text-align: center;
 }
@@ -273,7 +279,7 @@ header {
     display: inline-block;
     padding: 0.5rem 1rem;
     background-color: var(--clr-accent);
-    color: var(--clr-dark);
+    color: var(--clr-dark); /* Dark color for text on button */
     text-decoration: none;
     border-radius: 0.25rem;
     font-weight: var(--fw-bold);
@@ -292,28 +298,14 @@ header {
     width: 25%;
     height: 1px;
     margin: 0.5em auto;
-    background-color: var(--clr-light);
-}
-
-@media (min-width: 800px) {
-    .my-services {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-
-    .my-services .service {
-        margin-bottom: 1rem;
-    }
+    background-color: var(--clr-light); /* Light color for line */
 }
 
 /* My work section */
 
 .my-work {
-    background-color: var(--clr-light);
-    color: var(--clr-dark);
+    background-color: var(--clr-dark); /* Dark background */
+    color: var(--clr-light); /* Light text color */
     padding: 2rem;
 }
 
@@ -348,8 +340,8 @@ header {
 /* Footer */
 
 footer {
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-dark); /* Dark footer background */
+    color: var(--clr-light); /* Light footer text color */
     text-align: center;
     padding: 1rem;
 }
@@ -371,8 +363,7 @@ footer {
 }
 
 .social-list__item a {
-    color: var(--clr-light);
+    color: var(--clr-light); /* Light color for social icons */
     text-decoration: none;
     font-size: 1.5rem;
 }
-
